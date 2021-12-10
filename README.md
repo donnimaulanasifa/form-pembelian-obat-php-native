@@ -16,7 +16,7 @@ Dafar isi
 
 ## Chapter 2 Download dan Deploy
 
-Download form-pembelian-obat-php-native
+Download [form-pembelian-obat-php-native](https://github.com/donnimsifa/form-pembelian-obat-php-native/releases/tag/Releases),
 Unpack file yang di download, misalkan di C:\Form\
 Jalankan Docker dan Visual Code
 Buka folder C:\Form\ di Visual Code
