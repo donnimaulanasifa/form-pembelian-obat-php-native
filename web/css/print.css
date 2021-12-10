@@ -1,0 +1,46 @@
+@media print {
+    body,
+    input,
+    td,
+    .form-control,
+    .form-control:disabled,
+    .form-control[readonly],
+    .fixed-bottom {
+        text-align: left;
+        background: #fff;
+    }
+
+    table,
+    td,
+    th
+    {
+      border: 1px solid #000;
+      text-align: center;
+      border-radius: 0;
+    }
+    input {
+        border: 0px;
+    }
+
+    h1,
+    p,
+    a,
+    th,
+    input,
+    td,
+    b,
+    body,
+    a:not([href]):not([tabindex]),
+    .form-control {
+        color: #000;
+    }
+
+    .noprint {
+        visibility: hidden;
+        display: none;
+    }
+
+    .text-racikan:before {
+        content: "Dan 1 racikan obat "
+      }
+}

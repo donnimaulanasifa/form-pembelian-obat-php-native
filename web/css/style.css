@@ -1,0 +1,221 @@
+*{
+  --merah:#ef6c57;
+  --hijau:#66a98f;
+  --gelap: rgb(52, 49, 49);
+  --terang: rgb(244, 244, 244);
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  --text-color: var(--gelap);
+  --text-colori: var(--terang);
+  --bkg-color: var(--terang);
+  --bkg-colori: var(--gelap);
+  --switch: "Ubah tema menjadi mode gelap";
+}
+
+body.dark-theme {
+  --text-color:var(--terang);
+  --text-colori: var(--gelap);
+  --bkg-color: var(--gelap);
+  --bkg-colori: var(--terang);
+  --switch: "Ubah tema menjadi mode terang";
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* defaults to dark theme */
+  body {
+    --text-color:var(--terang);
+    --text-colori: var(--gelap);
+    --bkg-color: var(--gelap);
+    --bkg-colori: var(--terang);
+    --switch: "Ubah tema menjadi mode terang";
+  }
+
+  body.light-theme {
+    --text-color: var(--gelap);
+    --text-colori: var(--terang);
+    --bkg-color: var(--terang);
+    --bkg-colori: var(--gelap);
+    --switch: "Ubah tema menjadi mode gelap";
+  }
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+input,
+td,
+.form-control,
+.form-control:disabled,
+.form-control[readonly],
+.fixed-bottom {
+  text-align: left;
+  transition: background 0.5s, color 0.5s;
+  background: var(--bkg-color);
+}
+
+h1,
+p,
+a,
+th,
+input,
+td,
+b,
+body,
+a:not([href]):not([tabindex]),
+.form-control,
+.form-control:active {
+  transition: background 0.5s, color 0.5s;
+  color: var(--text-color);
+}
+
+.form-control,
+p {
+  border: 0px;
+  border-radius: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+table,
+td,
+th,
+input {
+  border: 1px solid var(--hijau);
+  text-align: center;
+  border-radius: 0;
+}
+
+input{
+  border: 0px;
+}
+
+.kirimform {
+  line-height: 48px;
+  margin: auto;
+  width: 42%;
+  border: 1px solid var(--hijau);
+  height: 50px;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+}
+
+.bgijo:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.bgijo, .tambah,.tambahini,.rtambah,.rtambahini,.pilih_semua, .rpilih_semua, .tambah_racikan, .daftarobat {
+  background: var(--hijau);
+  border: 1px solid var(--hijau);
+  color: #fff;
+}
+
+.bgmerah, .hapus,.rhapus,.rhapusini {
+  background: var(--merah);
+  border: 1px solid var(--merah);
+  color: #fff;
+}
+
+.btn-container {
+  text-align: left;
+  margin: 15px 0px;
+}
+
+button,
+.btn {
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: .85rem;
+}
+
+.change-mode {
+  color: var(--text-colori);
+  background: var(--bkg-colori);
+}
+
+.change-mode:before {
+  content: var(--switch)
+}
+
+.autocomplete-suggestions {
+  text-align: left;
+  overflow-wrap: break-word;
+  border: 1px solid #999;
+  background: var(--bkg-color);
+  overflow: auto;
+  color: var(--text-color);
+}
+
+.autocomplete-suggestion {
+  text-align: left;
+  padding: 2px 5px;
+  border: 1px solid #999;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.autocomplete-selected {
+  text-align: left;
+  background: var(--bkg-color);
+}
+
+.autocomplete-suggestions strong {
+  text-align: left;
+  font-weight: normal;
+  color: #3399FF;
+}
+
+.autocomplete-group {
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.autocomplete-group strong {
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+.footer{
+  height:80px;
+}
+
+.tabeldaftarobat,
+.tablehead,
+.tablebody{
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+}
+.w50{
+  width: 50%;
+}
+
+.rowstock,
+.rowqty {
+  width: 15%;
+}
+
+.novisible{
+  display: none;
+}
+
+.text-racikan:before {
+  content: "Obat Racikan "
+}
