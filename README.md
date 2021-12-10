@@ -17,24 +17,35 @@ Dafar isi
 ## Chapter 2 Download dan Deploy
 
 Download [form-pembelian-obat-php-native](https://github.com/donnimsifa/form-pembelian-obat-php-native/releases/tag/Releases),
+
 Unpack file yang di download, misalkan di C:\Form\
+
 Jalankan Docker dan Visual Code
+
 Buka folder C:\Form\ di Visual Code
+
 jalankan perintah "docker-compose up -d"
+
 tunggu hingga docker selesai mendeploy aplikasi
 
 ## Chapter 3 Masukan Database
 
 buka web browser, navigasi ke http://localhost:3030/
+
 muncul tampilan Adminer, yaitu semacam aplikasi pengelola database
+
 masukan username : root, dan password = pass, kemudian login
+
 setelah login, buat database baru melalui menu "Create database"
+
 beri nama "data" dan biarkan yang lainnya default, kemudian klik save
+
 pada bagian kiri pilih "DB:" menjadi data, kemudian klik "import"
+
 pada bagian "File upload", upload satu demi satu database yang sudah di download
+
 jika sudah selesai, maka database sudah masuk kedalam sistem
 
 ## Chapter 4 Finally
 
-Setelah semuanya selesai dikonfigurasikan, form pembelian obat dapat dibuka di :
-http://localhost:3010/
+Setelah semuanya selesai dikonfigurasikan, form pembelian obat dapat dibuka di : http://localhost:3010/
